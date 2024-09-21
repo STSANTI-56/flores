@@ -54,7 +54,6 @@ h1 {
 .p9 { transform: translate(-50%, -50%) rotate(288deg); }
 .p10 { transform: translate(-50%, -50%) rotate(324deg); }
 
-/* Agrega las siguientes clases para las animaciones */
 @keyframes fadeInPetal {
     from {
         opacity: 0;
@@ -74,11 +73,10 @@ h1 {
 }
 
 .petal {
-    /* Agrega una animación de entrada a los pétalos */
     animation: fadeInPetal 0.5s ease-in-out both;
 }
 
-
+/* Estilos para el botón */
 button {
     padding: 10px 20px;
     background-color: #FF8C00;
@@ -92,10 +90,22 @@ button {
 }
 
 button:hover {
-    background-color: #FFA500; /* Color más claro al pasar el mouse */
-    transform: scale(1.05); /* Efecto de aumento */
+    background-color: #FFA500;
+    transform: scale(1.05);
 }
 
 button:active {
-    transform: scale(0.95); /* Efecto de reducción al hacer clic */
+    transform: scale(0.95);
 }
+
+/* Contenedor de audio fijo en la parte inferior */
+.audio-container {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo semi-transparente */
+    padding: 10px;
+    z-index: 1000;
+}
+
